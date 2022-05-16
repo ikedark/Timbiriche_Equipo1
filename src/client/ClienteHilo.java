@@ -29,6 +29,7 @@ public class ClienteHilo extends Thread {
                     System.out.println(mensaje.substring(7));
                 }else if(mensaje.startsWith("num ")){
                     numJugador=Integer.parseInt(mensaje.substring(4));
+                    System.out.println(numJugador);
                 //Cuando llegue un mensaje que empiece con el número del jugador
                 }else if(mensaje.startsWith(String.valueOf(numJugador))){
                     
